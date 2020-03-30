@@ -8,8 +8,8 @@ const constant = require('../model/constant')
 var segment = new Segment();
 // 配置，可根据实际情况增删，详见segment.useDefault()方法
 segment.use('URLTokenizer');  // 载入识别模块，详见lib/module目录，或者是自定义模块的绝对路径
-segment.loadStopwordDict('stopword.txt');
-segment.loadDict('dict.txt'); // 载入字典，详见dicts目录，或者是自定义字典文件的绝对路径
+segment.loadStopwordDict(constant.stopPath);
+segment.loadDict(constant.dictPath); // 载入字典，详见dicts目录，或者是自定义字典文件的绝对路径
 segment.useDefault();
 
 fs.readFile(constant.articlePath, 'utf-8', async (err, data) => {

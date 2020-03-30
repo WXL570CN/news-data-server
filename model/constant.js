@@ -10,5 +10,8 @@ const url = `http://top.news.sina.com.cn/ws/GetTopDataList.php?top_type=day&top_
 // 新闻详情存储路径
 const p = path.resolve(__dirname, '..')
 const articlePath = `${p}\\public\\article\\${yearMD}.txt`
+// segment分词模块使用到的去除文档及增添文档
+const dictPath = `${p}\\public\\dicts\\dict.txt`
+const stopPath = `${p}\\public\\dicts\\stopword.txt`
 
-module.exports = { yearMD, monthD, url, articlePath }
+module.exports = { yearMD, monthD, url, articlePath, dictPath, stopPath }
