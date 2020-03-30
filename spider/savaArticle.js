@@ -8,7 +8,7 @@ module.exports = async lists => {
     lists.forEach(async item => {
       try {
         const $ = await req(item.url)
-        fs.appendFile('./spider/article/test.txt', $("#article > p").text(), function (err) {
+        fs.appendFile(constant.articlePath, $("#article > p").text(), function (err) {
           if (err) {
               console.log(err);
           }
