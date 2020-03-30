@@ -12,7 +12,7 @@ segment.loadStopwordDict('stopword.txt');
 segment.loadDict('dict.txt'); // 载入字典，详见dicts目录，或者是自定义字典文件的绝对路径
 segment.useDefault();
 
-fs.readFile('./article/test.txt', 'utf-8', async (err, data) => {
+fs.readFile(constant.articlePath, 'utf-8', async (err, data) => {
   if (err) {
     console.log(err)
   } else {
