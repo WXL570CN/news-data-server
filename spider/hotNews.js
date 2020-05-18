@@ -14,7 +14,7 @@ const model = require('../model/index')
 // 导入词云处理模块
 const hotNewsCloud = require('./hotNewsCloud')
 // 导入新闻详情处理模块
-const savaArticle = require('./saveArticle')
+const saveArticle = require('./saveArticle')
 
 module.exports = () => {
   rp(constant.url).then(async res => {
@@ -50,6 +50,6 @@ module.exports = () => {
     // 获取热点词云并存储
     hotNewsCloud(lists)
     // 保存新闻详情至本地
-    await savaArticle(lists)
+    await saveArticle(lists)
   });
 }
