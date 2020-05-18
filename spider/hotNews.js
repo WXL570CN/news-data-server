@@ -14,7 +14,7 @@ const model = require('../model/index')
 // 导入词云处理模块
 const hotNewsCloud = require('./hotNewsCloud')
 // 导入新闻详情处理模块
-const savaArticle = require('./savaArticle')
+const savaArticle = require('./saveArticle')
 
 module.exports = () => {
   rp(constant.url).then(async res => {
