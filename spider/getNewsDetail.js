@@ -1,4 +1,4 @@
-const req = require('./req')
+const req = require('../model/req')
 
 // 根据对应url爬取详情页面数据
 module.exports = async url => {
