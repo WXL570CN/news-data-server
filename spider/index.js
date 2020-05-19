@@ -4,8 +4,8 @@ const todayInHistory = require('./todayInHistory')
 const hotGame = require('./hotGame')
 
 module.exports = () => {
+  // hotSearchEvent(),
+  // hotGame(),
   hotNews(),
-  hotSearchEvent(),
-  todayInHistory(),
-  hotGame()
+  todayInHistory()
 }

@@ -6,6 +6,7 @@ var logger = require('morgan');
 var cors = require('cors')
 
 var spider = require('./spider')
+var segment = require('./spider/segmentation.js')
 var newsRouter = require('./routes')
 
 var app = express();
@@ -46,5 +47,8 @@ spider()
 setInterval(() => {
   spider()
 }, 3600000)
+setInterval(() => {
+  segment()
+}, 3660000)
 
 module.exports = app;
