@@ -44,11 +44,11 @@ app.use(function(err, req, res, next) {
 // 数据爬取并存储
 spider()
 // 每一个小时更新一次内容
-setInterval(() => {
-  spider()
-}, 3600000)
-setInterval(() => {
-  segment()
-}, 3660000)
+// setInterval(() => {
+//   spider()
+// }, 3600000)
+// setInterval(() => {
+//   segment()
+// }, 3660000)
 
 module.exports = app;
