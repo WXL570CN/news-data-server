@@ -11,7 +11,7 @@
     "cors": "^2.8.5",
     "date-and-time": "^0.12.0",
     "debug": "~2.6.9",
-    "express": "~4.16.1",
+    "express": "~4.17.3",
     "http-errors": "~1.6.3",
     "mongoose": "^5.9.2",
     "morgan": "~1.9.1",
